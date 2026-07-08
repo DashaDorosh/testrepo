@@ -24,6 +24,10 @@ jobs:
       - name: Run Invicti Scan CLI
         run: /home/invicti/scancli/ScanCLI
 
+      - name: List scan output
+        if: always()
+        run: ls -la /home/invicti/publicdata/ || echo "Directory empty or missing"
+
       - name: Upload scan artifacts
         if: always()
         uses: actions/upload-artifact@v4
