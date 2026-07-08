@@ -12,12 +12,11 @@ jobs:
     container:
       image: invicti/scan-cli:latest
     env:
-      INVICTI_API_BASE_URL:
+      INVICTI_API_BASE_URL: "https://platform.invicti.com"
       INVICTI_API_TOKEN: INVICTI_API_TOKEN
-      INVICTI_TARGET_ID:
+      INVICTI_TARGET_ID: "38ef06e0-eeb0-4214-a632-dd5a9e2544a7"
       INVICTI_SCAN_AGENT: "CloudAgent"
-      INVICTI_SCAN_PROFILE:
-      INVICTI_MINIMUM_SEVERITY:
+      INVICTI_SCAN_PROFILE: "SQL Injection"
 
     steps:
       - name: Run Invicti Scan CLI
