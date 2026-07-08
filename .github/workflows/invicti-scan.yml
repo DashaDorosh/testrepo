@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: invicti/scan-cli:latest
+      volumes:
+        - /home/runner/work/scan-results:/home/invicti/publicdata
     env:
       INVICTI_API_BASE_URL: "https://platform.invicti.com"
       INVICTI_API_TOKEN: MoQqW61R0PiAmnD-7NffOOrvn3OtvVjI5DS92w0pmq8
@@ -27,6 +29,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: invicti-scan-results
-          path: /home/invicti/publicdata/**
+          path: /home/runner/work/scan-results/**
           if-no-files-found: ignore
           retention-days: 7
