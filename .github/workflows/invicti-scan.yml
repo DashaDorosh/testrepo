@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: invicti/scan-cli:latest
+      options: --user root
       volumes:
         - /home/runner/work/scan-results:/home/invicti/publicdata
     env:
