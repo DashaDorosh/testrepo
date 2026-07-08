@@ -29,6 +29,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: invicti-scan-results
-          path: /home/runner/work/scan-results/**
+          path: /__w/scan-results/**
           if-no-files-found: ignore
           retention-days: 7
