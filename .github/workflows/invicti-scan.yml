@@ -15,9 +15,9 @@ jobs:
       volumes:
         - /home/runner/work/scan-results:/home/invicti/publicdata
     env:
-      INVICTI_API_BASE_URL: "https://platform.invicti.com"
-      INVICTI_API_TOKEN: MoQqW61R0PiAmnD-7NffOOrvn3OtvVjI5DS92w0pmq8
-      INVICTI_TARGET_ID: "68c8eef3-f3da-4754-80c7-fb91ba4aa6e7"
+      INVICTI_API_BASE_URL: "https://platform-eu.invicti.com"
+      INVICTI_API_TOKEN: 0thJjNya_5u2nzyYoZ_vwlBk3KJf-uUF2NRlJ9i_efU
+      INVICTI_TARGET_ID: "dbb9e926-d790-4a9f-92fa-ffa0798d61fe"
       INVICTI_SCAN_AGENT: "CloudAgent"
       INVICTI_SCAN_PROFILE: "SQL Injection"
       # INVICTI_REPORT_TEMPLATE: "Comprehensive"
