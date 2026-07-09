@@ -20,7 +20,7 @@ jobs:
       INVICTI_TARGET_ID: "68c8eef3-f3da-4754-80c7-fb91ba4aa6e7"
       INVICTI_SCAN_AGENT: "CloudAgent"
       INVICTI_SCAN_PROFILE: "SQL Injection"
-      INVICTI_REPORT_TEMPLATE: "Comprehensive"
+      # INVICTI_REPORT_TEMPLATE: "Comprehensive"
 
     steps:
       - name: Run Invicti Scan CLI
