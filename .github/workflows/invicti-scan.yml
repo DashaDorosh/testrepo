@@ -19,7 +19,7 @@ jobs:
       INVICTI_API_TOKEN: 0thJjNya_5u2nzyYoZ_vwlBk3KJf-uUF2NRlJ9i_efU
       INVICTI_TARGET_ID: "dbb9e926-d790-4a9f-92fa-ffa0798d61fe"
       INVICTI_SCAN_AGENT: "CloudAgent"
-      INVICTI_SCAN_PROFILE: "SQL Injection"
+      INVICTI_SCAN_PROFILE: "SQL Injection" 
       # INVICTI_REPORT_TEMPLATE: "Comprehensive"
 
     steps:
